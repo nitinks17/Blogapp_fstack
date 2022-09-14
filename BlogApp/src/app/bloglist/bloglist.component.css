@@ -1,0 +1,15 @@
+.blogbox{
+    width: 25%;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 5%;
+}
+
+.blogbox button{
+ padding: 10px;
+    
+}
+p{
+    font-style: italic;
+    color: red;
+}

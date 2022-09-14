@@ -1,0 +1,13 @@
+
+<div class="container">
+    <div class="blogbox" *ngFor="let elem of blogdata">
+       <h3>{{elem.id}}--{{elem.name}}</h3>
+        <p>{{elem.details}}</p>
+        
+        
+        <button routerLink ="{{elem.id}}">update</button>
+        <button (click)="deleteblog(elem.id)">delete</button>
+        <!-- <a routerLink="update/{{elem.id}}">dfdfd</a> -->
+    </div>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,10 @@
+
+<h1>updating blog</h1>
+
+<form #blogform="ngForm" (ngSubmit)="updateit(blogform.value)">
+    <input type="text" ngModel name="name" placeholder="enter blogname">
+    <br><br>
+    <input type="text" ngModel name="details" placeholder="enter details">
+    <br><br>
+    <button>update Blog</button>
+</form>

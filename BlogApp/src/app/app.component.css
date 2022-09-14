@@ -1,0 +1,23 @@
+
+
+.menu{
+    width: 100vw;
+    height: 60px;
+    background-color: lightseagreen;
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    list-style: none;
+    font-size: 25px;
+   padding-top: 10px;
+
+}
+li a{
+    text-decoration: none;
+}
+button{
+    padding: 5px 15px;
+    background-color: antiquewhite;
+   cursor: pointer;
+}

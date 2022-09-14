@@ -1,0 +1,12 @@
+<p>form will be present where you will add blog</p>
+
+<div class="container">
+<form #blogform="ngForm" (ngSubmit)="getBlogdata(blogform.value)">
+    <input type="text" ngModel name="id" placeholder="enterid"> <br><br>
+    <input type="text" ngModel name="name" placeholder="enter blogname">
+    <br><br>
+    <input type="text" ngModel name="details" placeholder="enter details">
+    <br><br>
+    <button>Add Blog</button>
+</form>
+</div>
