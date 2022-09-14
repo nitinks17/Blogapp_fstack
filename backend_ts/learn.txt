@@ -1,0 +1,11 @@
+1)tsc --init  //to initliaze ts bt ts should be installed globally.
+2)npm init --y //install npm
+3)change outdir and rootdir and experimentalDecorator:true in tsconfig.json
+"outDir": "./dist",    "rootDir": "./src",     
+4)create src folder
+5)npm install --save express body-parser sequelize sequelize-typescript mysql2
+6)npm install nodemon
+7)npm install @types/node
+8)npm install @types/express
+9)go to packege.json and add start
+"start":"tsc && nodemon dist/app.js"
