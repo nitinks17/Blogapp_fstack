@@ -33,7 +33,7 @@ export let singleblog:RequestHandler=async(req,res)=>{
             id:req.params.id
         }
     })
-    console.log(single)
+    // console.log(single)
  return  res.send(single)
 }
 

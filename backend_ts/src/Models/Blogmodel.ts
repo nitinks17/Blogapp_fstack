@@ -21,7 +21,7 @@ export class Blogs extends Model{
             name!:string;
 
             @Column({
-                type: DataType.STRING,
+                type: DataType.TEXT('long'),
                 allowNull: false,
                 })
                 details!:string;
