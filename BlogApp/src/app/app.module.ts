@@ -10,6 +10,8 @@ import { AddblogComponent } from './addblog/addblog.component';
 import { FormsModule } from '@angular/forms';
 import { UpdateblogComponent } from './updateblog/updateblog.component';
 import { BloglistComponent } from './bloglist/bloglist.component';
+import { ShowsingleComponent } from './showsingle/showsingle.component';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { BloglistComponent } from './bloglist/bloglist.component';
         HomeComponent,
         AddblogComponent,
         UpdateblogComponent,
-        BloglistComponent
+        BloglistComponent,
+        ShowsingleComponent
   ],
   imports: [
     BrowserModule,

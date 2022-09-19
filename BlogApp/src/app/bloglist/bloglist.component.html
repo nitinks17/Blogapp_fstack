@@ -1,5 +1,5 @@
 
-<div class="container">
+<!-- <div class="container">
     <div class="blogbox" *ngFor="let elem of blogdata">
        <h3>{{elem.id}}--{{elem.name}}</h3>
         <p>{{elem.details}}</p>
@@ -7,7 +7,39 @@
         
         <button routerLink ="{{elem.id}}">update</button>
         <button (click)="deleteblog(elem.id)">delete</button>
-        <!-- <a routerLink="update/{{elem.id}}">dfdfd</a> -->
+        < <a routerLink="update/{{elem.id}}">dfdfd</a> -->
+    <!-- </div>
+</div> --> 
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6" *ngFor="let elem of blogdata" >
+            <div class="card gap-3 mb-3" >
+               
+                <div class="card-body">
+                  <h5 class="card-title" routerLink="single/{{elem.id}}">{{elem.id}}--{{elem.name}}</h5>
+                  <p class="card-text">{{elem.details}}</p>
+                        <div class="row">
+                            <div class="col-6">
+    <button type="button" class="btn btn-success" routerLink ="{{elem.id}}">Update</button>
+                  
+                </div>
+                <div class="col-6">
+             <button type="button" class="btn btn-success" (click)="deleteblog(elem.id)">Delete</button>
+                
+                </div>
+                </div>
+                </div>
+              </div>
+        </div>
     </div>
 </div>
+<!-- Lorem ipsum dolor sit amet. -->
+<!-- Button trigger modal -->
+
+  <!-- <button >showsingllllll</button> -->
+  <!-- Modal -->
+  
+
+<!-- Lorem ipsum dolor sit amet. -->
 <router-outlet></router-outlet>

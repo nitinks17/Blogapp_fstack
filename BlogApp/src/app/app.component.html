@@ -1,10 +1,26 @@
-<ul class="menu">
-<li><a routerLink="">Home</a></li>
-<br>
-<br>
-<li><a routerLink="blog">All Blog</a></li>
-<br>
-<li><button routerLink="add">Add</button></li>
 
-</ul>
-<router-outlet></router-outlet>
+
+<!-- <nav class="navbar bg-light">
+    <div class="container-fluid">
+        <ul class="menu d-inline-flex p-2">
+            <li><a routerLink="">Home</a></li>
+            <br>
+            <br>
+            <li><a routerLink="blog">All Blog</a></li>
+            <br>
+            <li><button routerLink="add">Add</button></li>
+            </ul>
+    </div>
+  </nav> -->
+
+  <nav class="navbar  bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand fs-3 " routerLink="">Home</a>
+      <a class="navbar-brand fs-3" routerLink="blog">All Blog</a>
+      <form class="d-flex" role="search">
+        
+        <button class="btn btn-outline-success  btn-lg pl-2 pr-6  " type="submit" routerLink="add" >Add</button>
+      </form>
+    </div>
+  </nav><router-outlet></router-outlet>
+

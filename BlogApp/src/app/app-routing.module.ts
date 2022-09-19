@@ -5,6 +5,7 @@ import { BloglistComponent } from './bloglist/bloglist.component';
 
 import { BlogsComponent } from './blogs/blogs.component';
 import { HomeComponent } from './home/home.component';
+import { ShowsingleComponent } from './showsingle/showsingle.component';
 import { UpdateblogComponent } from './updateblog/updateblog.component';
 
 
@@ -16,7 +17,9 @@ const routes: Routes = [
 {component:BlogsComponent,path:"blog",
 children:[
   {component:BloglistComponent,path:""},
-  {component:UpdateblogComponent,path:":id"}]},
+  {component:UpdateblogComponent,path:":id"},
+   {component:ShowsingleComponent,path:"single/:id"}
+]},
 {component:AddblogComponent,path:"add"},
 
 

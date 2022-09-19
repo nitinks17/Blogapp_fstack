@@ -12,7 +12,9 @@ export class BlogdataService {
    return this.http.get<Datatype[]>(`http://localhost:2000/blogs`)
   
   }
-
+  getsingleblog(id:any){
+    return this.http.get(`http://localhost:2000/blogs/${id}`)
+  }
   saveblog(data:any){
     return this.http.post<Datatype>(`http://localhost:2000/blogs`,data)
   }
@@ -24,5 +26,9 @@ export class BlogdataService {
   updateblogdata(id:any,data:any){
    
     return this.http.put(`http://localhost:2000/blogs/${id}`,data)
+  }
+
+  showsingleblog(id:any){
+     return this.http.get(`http://localhost:2000/blogs/${id}`)
   }
 }

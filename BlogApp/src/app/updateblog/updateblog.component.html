@@ -2,9 +2,10 @@
 <h1>updating blog</h1>
 
 <form #blogform="ngForm" (ngSubmit)="updateit(blogform.value)">
-    <input type="text" ngModel name="name" placeholder="enter blogname">
+    <input type="text"  ngModel name="name" value="hjhjhjhj" >
     <br><br>
-    <input type="text" ngModel name="details" placeholder="enter details">
+    <textarea  name="details" ngModel cols="30" rows="10"  ></textarea>
     <br><br>
     <button>update Blog</button>
+ 
 </form>
